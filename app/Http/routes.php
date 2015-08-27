@@ -14,3 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('login', ['as' => 'login', 'middleware' => 'casauth', function () {
+    //redirect with message?
+}]);
+
+Route::get('logout', ['as' => 'logout', function () {
+    return Cas::logout();
+}]);
+
+Route::group(['middleware' => 'casauth', 'prefix' => 'admin'], function () {
+
+    Route::get('/', function () {
+        return redirect('admin/dashboard');
+    });
+
+    Route::get('dashboard', [ 'as' => 'admin/dashboard', function () {
+        return Cas::getAttributes();
+    }]);
+});
