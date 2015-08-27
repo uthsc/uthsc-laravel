@@ -144,6 +144,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Xavrsl\Cas\CasServiceProvider::class
+
     ],
 
     /*
@@ -191,6 +193,7 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Cas'       => Xavrsl\Cas\Facades\Cas::class
 
     ],
 
