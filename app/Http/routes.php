@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('theme', function () {
+    return view('pages/theme');
+});
+
 Route::get('login', ['as' => 'login', 'middleware' => 'casauth', function () {
     //redirect with message?
 }]);
@@ -33,3 +37,4 @@ Route::group(['middleware' => 'casauth', 'prefix' => 'admin'], function () {
         return Cas::getAttributes();
     }]);
 });
+
