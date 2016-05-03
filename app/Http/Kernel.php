@@ -29,6 +29,6 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'casauth' => \App\Http\Middleware\CASAuthenticate::class,
+        'casauth' => \App\Http\Middleware\CasAuthenticate::class,
     ];
 }

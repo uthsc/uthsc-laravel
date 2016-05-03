@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\Auth\Guard;
 use Xavrsl\Cas\Facades\Cas;
 
-class CASAuthenticate
+class CasAuthenticate
 {
     /**
      * The Guard implementation.
