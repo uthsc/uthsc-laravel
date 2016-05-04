@@ -18,26 +18,11 @@
 <body>
 
 @include('layout.partials.off-canvas-nav')
+<header id="uthsc-header">
 
-<!--Off Canvas Wrapper-->
-<div id="wrapper">
-    <div id="mobile-navigation" class="hide-for-large-up">
-        <button class="nav-toggler toggle-push-left left"></button>
-        <button class="nav-toggler toggle-push-right right"></button>
-        @if ( strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone') )
-            <div class="bottom-nav-bar"></div>
-        @endif
-    </div>
+    @include('layout.partials.banner')
 
-    <header id="uthsc-header">
-
-        @include('layout.partials.header-nav')
-
-        @include('layout.partials.breadcrumbs')
-
-    </header>
-
-    @include('layout.partials.main-nav')
+</header>
 
 @yield('content')
 
