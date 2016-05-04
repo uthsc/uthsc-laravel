@@ -17,7 +17,6 @@
 
 <body>
 
-@include('layout.partials.off-canvas-nav')
 <header id="uthsc-header">
 
     @include('layout.partials.banner')
@@ -26,25 +25,6 @@
 
 @yield('content')
 
-    <footer>
-        @include('layout.partials.top-footer')
-        @include('layout.partials.bottom-footer')
-    </footer>
-</div>
-
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/uthsc.foundation.min.js"></script>
-<script type="text/javascript">
-    (function ($) {
-        $(document).foundation({
-                    "magellan-expedition": {
-                        active_class: 'gellin' // specify the class used for active sections
-                    }
-                }
-        );
-    })(jQuery);
-</script>
-<script type="text/javascript">$(document).foundation('equalizer', 'reflow');</script>
 
 @yield('scripts')
 
