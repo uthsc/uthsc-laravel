@@ -1,6 +1,6 @@
 {
   "name": "foundation-libsass-template",
   "dependencies": {
-    "uthsc": "uthsc/UTHSC"
+    "uthsc": "uthsc/emerald"
   }
 }
