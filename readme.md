@@ -63,7 +63,7 @@ gulp build
 
 run gulp to watch assets for changes
 ```bash
-gulp watch
+gulp
 ```
 
 ### License
