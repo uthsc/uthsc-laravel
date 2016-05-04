@@ -7,3 +7,4 @@ Homestead.json
 .vagrant
 composer.lock
 cacerts_auth.pem
+public/assets
