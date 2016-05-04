@@ -12,10 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('theme', function () {
     return view('pages/theme');
 });
 
