@@ -1,10 +1,4 @@
-## Laravel PHP Framework
-
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Laravel PHP Framework for UTHSC
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
 
@@ -14,13 +8,63 @@ Laravel is accessible, yet powerful, providing powerful tools needed for large, 
 
 Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+## Getting Started
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+Before you get started you'll need to make sure you have the following installed:
 
-## Security Vulnerabilities
+- Git
+- PHP
+- Composer
+- Vagrant
+- npm*
+- Bower*
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+*Optional (If you don't have these, you can ssh in to homestead
+
+
+```bash
+git clone git@github.com:uthsc/uthsc-laravel.git  
+cd utlaravel
+```
+
+Install PHP dependencies with composer
+```bash
+composer install
+```
+
+### Homestead (vagrant)  
+[Homestead](https://laravel.com/docs/homestead) is a vagrant box built specifically for Laravel to ensure everyone working on the project is working in the same development environment.  
+
+You'll need to add the domain and host in `Homestead.yaml` to your hosts file before you can access your app in a browser:
+```
+#example
+92.168.10.10   laravel.uthsc.edu
+```
+
+Homestead should have been installed by composer; assuming you have vagrant installed on your machine, you can run vagrant up
+```bash
+vagrant up
+```
+
+You can ssh in to Homestead by running homestead ssh. You'll need to ssh in to run database migrations in tests. This is also useful for dealing with frontend dependecies if you don't have npm and bower installed on your local machine
+```
+vagrant ssh
+```
+
+Install dependencies with npm and bower
+```bash
+npm update && bower update
+```
+
+run gulp build to build frontend assets
+```bash
+gulp build
+```
+
+run gulp to watch assets for changes
+```bash
+gulp watch
+```
 
 ### License
 
