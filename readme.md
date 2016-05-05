@@ -35,7 +35,22 @@ composer install
 ### Homestead (vagrant)  
 [Homestead](https://laravel.com/docs/homestead) is a vagrant box built specifically for Laravel to ensure everyone working on the project is working in the same development environment.  
 
-You'll need to add the domain and host in `Homestead.yaml` to your hosts file before you can access your app in a browser:
+Run the following command to generate a `Homestead.yaml` file in your root directory. This will contain your vagrant configuration.
+```bash
+php vendor/bin/homestead make
+```
+You'll need to edit the file to reflect your preferences. The site should be mapped to a uthsc.edu domain if you want to use CAS authentication.
+This will determine the domain you use to see the app in a browser:
+```
+sites:
+    - map: laravel.uthsc.edu
+```
+It is recommended that you change the hostname at the top of the file to match the domain.
+```
+hostname: laravel.uthsc.edu
+```
+
+Add the ip and host in `Homestead.yaml` to your hosts file so you can access your app in a browser:
 ```
 #example
 92.168.10.10   laravel.uthsc.edu
