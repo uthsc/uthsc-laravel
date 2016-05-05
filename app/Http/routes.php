@@ -34,3 +34,13 @@ Route::group(['middleware' => 'casauth', 'prefix' => 'admin'], function () {
     }]);
 });
 
+Route::group(['prefix' => 'api'], function () {
+
+    Route::get('/', function () {
+        return ['some' => 'page'];
+    });
+
+    Route::get('/search/{term}', function ($term) {
+        return ['results' => $term];
+    });
+});
