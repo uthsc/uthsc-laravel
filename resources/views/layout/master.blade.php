@@ -18,6 +18,7 @@
 
 <header id="uthsc-header">
 
+    @include('layout.partials.site-nav')
     @include('layout.partials.banner')
 
 </header>
