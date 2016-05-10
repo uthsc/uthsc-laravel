@@ -48,9 +48,10 @@ gulp.task('copy-vendor-js', function() {
  */
 
 var sassPaths = [
-	'vendor/bower_components/uthsc/scss',
 	'vendor/bower_components/foundation-sites/scss',
-	'vendor/bower_components/motion-ui/src'
+	'vendor/bower_components/motion-ui/src',
+	'vendor/bower_components/emerald/scss',
+	'vendor/bower_components'
 ];
 
 //Output unminified css and map
@@ -101,7 +102,9 @@ gulp.task('build-js', function() {
 	.pipe(gulp.dest('public/assets/js'));
 });
 
-gulp.task('build', ['sass-dist']);
+gulp.task('copy', ['copy-fonts', 'copy-images', 'copy-vendor-js']);
+
+gulp.task('build', ['sass-dist', 'copy']);
 
 gulp.task('default', ['sass'], function () {
 	gulp.watch(['resources/assets/sass/**/*.scss'], ['sass']);
