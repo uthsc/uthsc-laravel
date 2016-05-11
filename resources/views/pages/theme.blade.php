@@ -8,8 +8,6 @@
 
 @section('content')
 
-<!-- Hero Image-->
-<div class="hero hero-one"></div>
 <!-- Page Heading-->
 <div class="row">
     <div class="large-12 columns">
@@ -31,6 +29,7 @@
 <div class="row">
 
     <div class="large-12 columns">
+
         <h4>Getting Started with Laravel</h4>
         <p>Laravel is an MVC framework written in PHP with a focus on convention over configuration</p>
 
@@ -83,6 +82,69 @@
         <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button radius">Get Directions&ensp;<i class="fa fa-map-marker"></i></a>
     </div>
 </div>
+@endsection
 
-
+@section('left-off-canvas-menu')
+    <ul>
+        <li><a href="#" class="link-heading">Menu Dropdown One</a>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Menu Dropdown Two</a>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Menu Dropdown Three</a>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown</a></li>
+                <li><a href="#">Sixth Item in Dropdown</a></li>
+                <li><a href="#">Seventh Item in Dropdown</a></li>
+                <li><a href="#">Eighth Item in Dropdown</a></li>
+                <li><a href="#">Ninth Item in Dropdown</a></li>
+                <li><a href="#">Tenth Item in Dropdown</a></li>
+                <li><a href="#">Eleventh Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Menu Dropdown Four</a>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown</a></li>
+                <li><a href="#">Sixth Item in Dropdown</a></li>
+                <li><a href="#">Seventh Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Menu Dropdown Five</a>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Menu Dropdown Six</a>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Very Long</a></li>
+                <li><a href="#">Sixth Item in Dropdown</a></li>
+                <li><a href="#">Seventh Item in Dropdown</a></li>
+                <li><a href="#">Eighth Item in Dropdown</a></li>
+            </ul>
+        </li>
+    </ul>
 @endsection

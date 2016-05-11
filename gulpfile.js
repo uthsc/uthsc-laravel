@@ -89,10 +89,12 @@ gulp.task('sass-dist', function () {
  |--------------------------------------------------------------------------
  */
 
-gulp.task('build-js', function() {
+gulp.task('buildjs', function() {
 	gulp.src ([
 		//'vendor/bower_components/foundation-sites/dist/foundation.js',
 		'resources/assets/js/app.js',
+		'vendor/bower_components/emerald/js/partials/uthsc.off-canvas.js',
+		'vendor/bower_components/emerald/js/partials/uthsc.safari-bottom-nav-fix.js',
 		'resources/assets/js/partials/**/*.js'
 	])
 	.pipe($.concat('uthsc.js'))

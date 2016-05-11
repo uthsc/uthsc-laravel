@@ -16,18 +16,27 @@
 
 <body>
 
-<header id="uthsc-header">
+<!--******************-->
+<!--Off canvas wrapper-->
+<!--******************-->
+<div id="uthsc-off-canvas-wrapper" class="uthsc-off-canvas-wrapper">
 
-    @include('layout.partials.site-nav')
-    @include('layout.partials.banner')
-
-</header>
+@include('layout.partials.site-nav')
+@include('layout.partials.banner')
 
 @yield('content')
 
-<footer>
+@include('layout.partials.footer')
 
-</footer>
+</div>
+<!--*******************-->
+<!--/Off canvas wrapper-->
+<!--*******************-->
+
+@include('layout.partials.off-canvas.left-menu')
+@include('layout.partials.off-canvas.right-menu')
+@include('layout.partials.off-canvas.mask')
+@include('layout.partials.off-canvas.buttons')
 
 <script type="text/javascript" src="/assets/js/jquery.js"></script>
 <script type="text/javascript" src="/assets/js/foundation.js"></script>
